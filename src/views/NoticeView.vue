@@ -25,11 +25,9 @@
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 import router from '@/router'
-
 const notices = ref([])
-
 onMounted(() => {
-  axios.get('https://port-0-kktudic-backend-r8xoo2mlefs9qly.sel3.cloudtype.app/api/notices')
+  axios.get('http://localhost:3000/api/notices')
     .then(response => {
       notices.value = response.data
     })
@@ -37,7 +35,6 @@ onMounted(() => {
       console.log(error)
     })
 })
-
 const goToDetail = (id) => {
   router.isReady().then(() => {
     router.push(`/notice/${id}`)

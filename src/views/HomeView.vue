@@ -23,23 +23,20 @@
 <script setup>
 import { reactive, ref } from 'vue'
 import axios from 'axios'
-
 const state = reactive({
   word: [],
   count: []
 })
-
 const startWord = ref('')
 const missionWord = ref('')
 const sec = ref('')
-
 const search = async () => {
   if (!startWord.value) {
     return
   }
   document.querySelector('input[type="text"]').focus()
   try {
-    const { data } = await axios.post('https://port-0-kktudic-backend-r8xoo2mlefs9qly.sel3.cloudtype.app/api/submit', {
+    const { data } = await axios.post('http://localhost:3000/api/submit', {
       startWord: startWord.value,
       missionWord: missionWord.value
     })

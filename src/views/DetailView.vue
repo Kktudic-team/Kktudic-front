@@ -15,13 +15,11 @@
 import { useRoute } from 'vue-router'
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
-
 const route = useRoute()
 const notice = ref({})
-
 onMounted(() => {
   const id = route.params.id
-  axios.get(`https://port-0-kktudic-backend-r8xoo2mlefs9qly.sel3.cloudtype.app/api/notices/${id}`)
+  axios.get(`http://localhost:3000/api/notices/${id}`)
     .then(response => {
       notice.value = response.data
     })
@@ -29,9 +27,6 @@ onMounted(() => {
       console.log(error)
     })
 })
-
-console.log(notice)
-
 </script>
 
 <style src='@/css/Detail.css' scoped>
