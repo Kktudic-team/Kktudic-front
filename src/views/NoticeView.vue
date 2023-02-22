@@ -29,7 +29,7 @@ import router from '@/router'
 const notices = ref([])
 
 onMounted(() => {
-  axios.get('http://node:3000/api/notices')
+  axios.get('https://node:3000/api/notices')
     .then(response => {
       notices.value = response.data
     })
