@@ -21,7 +21,7 @@ const notice = ref({})
 
 onMounted(() => {
   const id = route.params.id
-  axios.get(`https://node:3000/api/notices/${id}`)
+  axios.get(`https://port-0-kktudic-backend-r8xoo2mlefs9qly.sel3.cloudtype.app/api/notices/${id}`)
     .then(response => {
       notice.value = response.data
     })
