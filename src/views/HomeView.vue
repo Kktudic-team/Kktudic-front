@@ -39,7 +39,7 @@ const search = async () => {
   }
   document.querySelector('input[type="text"]').focus()
   try {
-    const { data } = await axios.post('http://localhost:3000/api/submit', {
+    const { data } = await axios.post('http://node:3000/api/submit', {
       startWord: startWord.value,
       missionWord: missionWord.value
     })
