@@ -1,0 +1,92 @@
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88vh;
+}
+
+.box {
+    width: 70vw;
+    height: 90vh;
+}
+
+.box h1 {
+    margin-top: 2vh;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.man1 {
+    margin: 30px 0 30px 0;
+    padding: 20px 20px 20px 20px;
+    background-color: #28292E;
+    border-radius: 10px;
+}
+
+.man1 h2 {
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    padding-bottom: 5px;
+}
+
+.man1 p {
+    color: #C7CCD9;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+}
+
+.man2 {
+    margin: 30px 0 30px 0;
+    padding: 20px 20px 20px 20px;
+    background-color: #28292E;
+    border-radius: 10px;
+}
+
+.man2 h2 {
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    padding-bottom: 5px;
+}
+
+.man2 p {
+    color: #C7CCD9;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+}
+
+.man3 {
+    margin: 30px 0 30px 0;
+    padding: 20px 20px 20px 20px;
+    background-color: #28292E;
+    border-radius: 10px;
+}
+
+.man3 h2 {
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    padding-bottom: 5px;
+}
+
+.man3 p {
+    color: #C7CCD9;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+}
+
+@media (max-width: 800px) {
+    .box h1 {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,34 @@
+.navs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 90px;
+}
+
+.nav {
+    width: 70vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav img {
+    margin-right: 18px;
+}
+
+.nav a {
+    color: #A4A8B2;
+    font-size: 20px;
+}
+
+.nav a.router-link-exact-active {
+    color: #212226;
+}
+
+@media (max-width: 450px){
+    .navs {
+        height: 70px;
+    }
+}
