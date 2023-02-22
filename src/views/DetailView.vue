@@ -5,7 +5,7 @@
       <p class="day">{{ notice.createdAt }}</p>
       <span class="content">{{ notice.content }}</span>
       <div class="back" @click="$router.push('/notice')">
-        <img src="@/assets/Back_arrow.svg" alt="Back-arrow">
+        <img src="/assets/back_arrow.svg" alt="Back-arrow">
         <span>뒤로가기</span>
       </div>
     </div>
