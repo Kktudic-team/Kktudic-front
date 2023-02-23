@@ -34,3 +34,13 @@
         height: 70px;
     }
 }
+
+@media (max-width: 320px) {
+    .navs {
+        min-width: 250px;
+        height: 65px;
+    }
+    .nav {
+        min-width: 250px;
+    }
+}

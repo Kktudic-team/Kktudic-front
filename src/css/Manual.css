@@ -100,3 +100,12 @@
         font-size: 15px;
     }
 }
+
+@media (max-width: 320px) {
+    .box {
+        min-width: 250px;
+    }
+    .mans {
+        margin: 20px 0 20px 0;
+    }
+}

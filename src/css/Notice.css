@@ -76,3 +76,16 @@ th, td {
         display: none;
     }
 }
+
+@media (max-width: 320px) {
+    .box {
+        min-width: 250px;
+    }
+    .num {
+        font-size: 16px;
+    }
+    
+    .name {
+        font-size: 16px;
+    }
+}
