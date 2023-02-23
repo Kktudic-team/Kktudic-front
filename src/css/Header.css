@@ -4,14 +4,16 @@
     align-items: center;
     width: 100vw;
     height: 90px;
+    min-width: 300px;
 }
 
 .nav {
     width: 70vw;
-    height: 8vh;
+    height: 80px;
     display: flex;
     align-items: center;
     gap: 25px;
+    min-width: 300px;
 }
 
 .nav img {
@@ -27,7 +29,7 @@
     color: #212226;
 }
 
-@media (max-width: 450px){
+@media (max-width: 500px){
     .navs {
         height: 70px;
     }

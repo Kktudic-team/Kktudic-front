@@ -8,6 +8,7 @@
 .box {
     width: 70vw;
     height: 90vh;
+    min-width: 300px;
 }
 
 .tb {

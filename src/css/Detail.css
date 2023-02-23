@@ -8,6 +8,7 @@
 .box {
     width: 70vw;
     height: 90vh;
+    min-width: 300px;
 }
 
 .name {
@@ -36,6 +37,7 @@
     font-size: 20px;
     line-height: 150%;
     letter-spacing: -0.02em;
+    word-break: keep-all;
 }
 
 .back {
@@ -58,5 +60,29 @@
 @media (max-width: 800px) {
     .name {
         margin-top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .name {
+        font-size: 28px
+    }
+    .day {
+        font-size: 18px;
+    }
+    .content {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .name {
+        font-size: 25px
+    }
+    .day {
+        font-size: 18px;
+    }
+    .content {
+        font-size: 16px;
     }
 }
