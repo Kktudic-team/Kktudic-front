@@ -19,7 +19,7 @@ const route = useRoute()
 const notice = ref({})
 onMounted(() => {
   const id = route.params.id
-  axios.get(`http://bs.plebea.com/api/notices/${id}`)
+  axios.get(`https://kkutudicapi.teamlog.kr/api/notices/${id}`)
     .then(response => {
       notice.value = response.data
     })
