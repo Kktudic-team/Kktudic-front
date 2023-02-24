@@ -27,7 +27,7 @@ import axios from 'axios'
 import router from '@/router'
 const notices = ref([])
 onMounted(() => {
-  axios.get('http://localhost:3000/api/notices')
+  axios.get('http://bs.plebea.com/api/notices')
     .then(response => {
       notices.value = response.data
     })

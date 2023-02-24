@@ -36,7 +36,7 @@ const search = async () => {
   }
   document.querySelector('input[type="text"]').focus()
   try {
-    const { data } = await axios.post('http://localhost:3000/api/submit', {
+    const { data } = await axios.post('http://bs.plebea.com/api/submit', {
       startWord: startWord.value,
       missionWord: missionWord.value
     })
