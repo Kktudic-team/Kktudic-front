@@ -34,10 +34,10 @@ const missionWord = ref('')
 const sec = ref('')
 const isLoading = ref(false)
 const search = async () => {
-  isLoading.value = true
   if (!startWord.value) {
     return
   }
+  isLoading.value = true
   document.querySelector('input[type="text"]').focus()
   try {
     const { data } = await axios.post('https://kkutudicapi.teamlog.kr/api/submit', {
