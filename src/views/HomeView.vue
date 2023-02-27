@@ -11,7 +11,11 @@
             <div class="outputs">
               <LoadingItem v-if="isLoading"/>
               <ul v-else>
-                <li class="out" v-for="(d, idx) in state.word" :key="idx">
+                <li v-if="!state.word">
+                  <h3>검색하신 단어를 찾지 못했습니다.</h3>
+                  <span>단어 길이: Nah  |  미션 단어 갯수: Nah</span>
+                </li>
+                <li v-else class="out" v-for="(d, idx) in state.word" :key="idx">
                   <h3>{{ d }}</h3>
                   <span>단어 길이: {{ d.length-1 }}  |  미션 단어 갯수: {{ state.count[idx] }}</span>
                 </li>
