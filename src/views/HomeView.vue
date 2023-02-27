@@ -11,7 +11,7 @@
             <div class="outputs">
               <LoadingItem v-if="isLoading"/>
               <ul v-else>
-                <li v-if="!state.word">
+                <li v-if="!state">
                   <h3>검색하신 단어를 찾지 못했습니다.</h3>
                   <span>단어 길이: Nah  |  미션 단어 갯수: Nah</span>
                 </li>
