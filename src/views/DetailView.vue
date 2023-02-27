@@ -2,6 +2,10 @@
   <div class="cont">
     <div class="box" v-if="!isNotice">
       <h2 class="name">존재하지 않는 공지입니다.</h2>
+      <div class="back" @click="$router.push('/notice')">
+        <img src="/assets/Back_arrow.svg" alt="Back-arrow">
+        <span>돌아가기</span>
+      </div>
     </div>
     <div class="box" v-else>
       <h1 class="name">{{ notice.title }}</h1>
