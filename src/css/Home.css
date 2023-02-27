@@ -163,6 +163,7 @@
     .inputs {
         height: 6vh;
         min-height: 35px;
+        max-height: 50px;
     }
     .inputs input {
         padding-left: 2vw;
